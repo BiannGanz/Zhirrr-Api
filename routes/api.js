@@ -163,7 +163,7 @@ var len = 15
 router.get('/find', async (req, res, next) => {
     var apikey = req.query.apikey
     if (!apikey) return res.json(loghandler.notparam)
-    if (apikey != 'zahirgans') return res.json(loghandler.invalidKey)
+    if (apikey != 'biannganz') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.find()
@@ -224,7 +224,7 @@ router.get('/addapikey', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'zahirgans') return res.json(loghandler.invalidKey)
+    if (apikey != 'biannganz') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.insert({
