@@ -317,7 +317,7 @@ router.get('/tiktod/stalk', async (req, res, next) => {
         username = req.query.username
 
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'zahirgans') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'biannganz') return res.json(loghandler.invalidKey)
     if (!username) return res.json(loghandler.notusername)
 
 
